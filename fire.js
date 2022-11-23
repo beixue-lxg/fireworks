@@ -7,14 +7,15 @@ ocas.height = canvas.height = window.innerHeight;
 var bigbooms = [];
 
 function initAnimate() {
-    drawBg();
-    lastTime = new Date();
-    animate()
-    var music = document.getElementById("music");
+      var music = document.getElementById("music");
       music.src = 'music.mp3';
       music.oncanplay = function(){
           music.play();
       };
+    drawBg();
+    lastTime = new Date();
+    animate()
+
 }
 var lastTime;
 function animate() {
