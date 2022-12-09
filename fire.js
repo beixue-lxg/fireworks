@@ -7,11 +7,6 @@ ocas.height = canvas.height = window.innerHeight;
 var bigbooms = [];
 
 function initAnimate() {
-      var music = document.getElementById("music");
-      music.src = 'music.mp3';
-      music.oncanplay = function(){
-          music.play();
-      };
     drawBg();
     lastTime = new Date();
     animate()
@@ -110,6 +105,11 @@ canvas.onclick = function() {
         y: y
     });
     bigbooms.push(bigboom)
+     var music = document.getElementById("music");
+      music.src = 'music.mp3';
+      music.oncanplay = function(){
+          music.play();
+      };
 };
 var Boom = function(x, r, c, boomArea, shape) {
     this.booms = [];
