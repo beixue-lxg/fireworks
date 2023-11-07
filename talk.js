@@ -14,7 +14,7 @@ $(function() {
 });
 
 function A() {
-    modal('我喜欢你！', B);
+    modal('超喜欢你！', B);
 }
 
 function B() {
@@ -34,11 +34,7 @@ function E() {
 }
 
 function F() {
-    modal('笑一个~', G);
-}
-
-function G() {
-    modal('房产证上写你名~', H);
+    modal('笑一个~', H);
 }
 
 function H() {
